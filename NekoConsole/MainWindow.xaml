@@ -13,7 +13,38 @@
 
         </mah:WindowCommands>
     </mah:MetroWindow.RightWindowCommands>
-        <Grid>
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <!--<MenuItem Header="_Open" InputGestureText="Ctrl+O" Command="Open"></MenuItem>-->
+                </MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem Header="_About"></MenuItem>
+                    <MenuItem Header="_Official Page"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <StatusBar DockPanel.Dock="Bottom" MinHeight="30">
+                <StatusBarItem>
+                    <TextBlock>Made by Ulysses from Project AZUSA</TextBlock>
+                </StatusBarItem>
+                <StatusBarItem Width="100" HorizontalAlignment="Right" DockPanel.Dock="Right">
+                    
+                </StatusBarItem>
 
+            </StatusBar>
+
+            <mah:MetroAnimatedSingleRowTabControl mah:TabControlHelper.Underlined="SelectedTabItem" Grid.Row="1">
+                <TabItem Header="Character">
+                    <Button Content="Test" Click="Test"></Button>
+                </TabItem>
+                <TabItem Header="Player">
+                </TabItem>
+
+                <TabItem Header="Settings">
+
+                </TabItem>
+            </mah:MetroAnimatedSingleRowTabControl>
+        </DockPanel>
     </Grid>
 </mah:MetroWindow>
